@@ -1,0 +1,46 @@
+// ------------------------- BLOCK --------------------------
+
+// ------------------------ ELEMENT -------------------------
+.btn {
+  background-color: white;
+  outline: none !important;
+  cursor: pointer;
+
+  &:focus{
+    outline: none !important;
+  }
+
+  &:hover {
+    filter: brightness(90%);
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+// ---------------------- MODIFICATION ----------------------
+.btn--rounded {
+  border-radius: 5px !important;
+}
+
+.btn--extra-rounded {
+  border-radius: 15px !important;
+}
+
+.btn--fit-content {
+  width: fit-content;
+  padding: 0 !important;
+}
+
+.btn--border {
+  border: gray 1px solid !important;
+}
+
+.btn--white {
+  background-color: white !important;
+}
+
+.btn--transparent {
+  background-color: transparent !important;
+}

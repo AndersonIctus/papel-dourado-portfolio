@@ -1,0 +1,39 @@
+.div-container {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: 10em;
+    letter-spacing: .2em;
+    line-height: 1.1em;
+    margin:0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: 1.75em;
+    letter-spacing: .2em;
+    line-height: 1.1em;
+    margin:0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.botao-voltar {
+    font-family: emoji;
+
+    font-weight: bold;
+    font-size: 1.75em;
+    letter-spacing: .2em;
+    line-height: 1.1em;
+    text-align: center;
+
+    height: 4rem;
+    width: 14rem;
+}

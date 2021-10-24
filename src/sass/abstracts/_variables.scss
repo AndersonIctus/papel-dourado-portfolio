@@ -1,0 +1,19 @@
+// Cores das validações
+$my-color-error: #f44336 !default; //#f44336
+$my-color-success: #42A948 !default; // #42A948
+$my-color-nonrequired: #c5c508 !default; // #c5c508
+
+// Tamanho dos Menus e sub-menus
+$menu-width: 70px;
+$sub-menu-width: 125px;
+
+$content-width: calc(100% - #{$menu-width});
+$sub-content-width: calc(100% - #{$menu-width} - #{$sub-menu-width});
+
+// Cores usadas no Sistema
+$cinza-escuro: #545454;
+$cinza-claro: #afafaf;
+$verde: #009045;
+$vermelho: #a10013;
+$amarelo: #db9600;
+$azul: #00208b;

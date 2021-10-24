@@ -1,0 +1,21 @@
+
+// ------------------------- BLOCK --------------------------
+
+// ------------------------ ELEMENT -------------------------
+
+// ---------------------- MODIFICATION ----------------------
+.div--conteudo-a-direita {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.div--conteudo-centralizado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

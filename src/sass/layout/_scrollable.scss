@@ -1,0 +1,101 @@
+.scroll-hover {
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  &:hover {
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+._scrollable {
+  $size: 15px;
+  $little_version_ratio: 2;
+  $scrollbar-bg-color: rgba(0,0,0,0.15);
+  $scrollbar-handler-color: rgba(0,0,0,0.15);
+  $scrollbar-handler-color-hover: rgba(0,0,0,0.3);
+  $scrollbar-coner-color: rgba(0,0,0,0);
+
+  overflow-y: scroll;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  height: 100%;
+
+  &::-webkit-scrollbar {
+      background: none;
+      width: $size;
+      height: $size;
+  }
+
+  &::-webkit-scrollbar-track {
+      background-color:$scrollbar-bg-color;
+      border-radius: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      border-radius: $size;
+      background-color:$scrollbar-handler-color;
+      &:hover{
+          background-color:$scrollbar-handler-color-hover;
+      }
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: $scrollbar-coner-color;
+  }
+
+  &.little{
+      &::-webkit-scrollbar {
+          background: none;
+          width: $size / $little_version_ratio;
+          height: $size / $little_version_ratio;
+      }
+      &::-webkit-scrollbar-track {
+          border-radius: $size / $little_version_ratio;
+      }
+      &::-webkit-scrollbar-thumb {
+          border-radius: $size / $little_version_ratio;
+      }
+  }
+
+  &.autoHideScrollbar{
+      overflow-x: hidden;
+      overflow-y: hidden;
+
+      &:hover{
+          overflow-y: scroll;
+          overflow-x: scroll;
+          -webkit-overflow-scrolling: touch;
+
+          &.only-y{
+              overflow-y: scroll !important;
+              overflow-x: hidden !important;
+          }
+
+          &.only-x{
+              overflow-x: scroll !important;
+              overflow-y: hidden !important;
+          }
+
+          &.no-scrool-y {
+            &::-webkit-scrollbar {
+              display: none;
+            }
+          }
+      }
+  }
+
+  &.only-y:not(.autoHideScrollbar){
+      overflow-y: scroll !important;
+      overflow-x: hidden !important;
+  }
+
+  &.only-x:not(.autoHideScrollbar){
+      overflow-x: scroll !important;
+      overflow-y: hidden !important;
+  }
+}
